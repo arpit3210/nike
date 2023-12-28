@@ -2,9 +2,17 @@ import { hamburger } from '../assets/icons'
 import { headerLogo } from '../assets/images'
 // import {hamburger} from '../assets/icons'
 import { navLinks } from '../constants'
+import { useState } from 'react'
 
 
 const Nav = () => {
+
+  const [mobileNavOpen, setMobileNavOpen] = useState(false);
+
+  const toggleMobileNav = () => {
+    setMobileNavOpen(!mobileNavOpen);
+  };
+
   return (
     <div>
 
@@ -27,8 +35,9 @@ const Nav = () => {
             )}
 
 
-
           </ul>
+
+
 
 
           <div className='max-lg:hidden relative right-14' >
@@ -39,7 +48,7 @@ const Nav = () => {
 
 
           <div className='hidden max-lg:block'>
-            <img src={hamburger} alt="Hamburger" width={25} height={25} />
+           <a onClick={toggleMobileNav} > <img src={hamburger} alt="Hamburger" width={25} height={25} /></a>
           </div>
 
         </nav>

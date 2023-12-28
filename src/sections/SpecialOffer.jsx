@@ -16,7 +16,7 @@ const SpecialOffer = () => {
 
 <div className="flex flex-1 flex-col">
 
-<h2 className="mt-10 font-palanquin  capitalize text-4xl max-sm:text-[72px] lg:max-w-lg max-sm:leading-[82] font-bold " >
+<h2 className="mt-10 font-palanquin  capitalize text-4xl max-sm:text-[72px] lg:max-w-lg max-sm:leading-[82px] font-bold " >
   {/* We Provide You */}
   <br />
 
